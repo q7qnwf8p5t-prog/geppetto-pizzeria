@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Geppetto Artisan Pizzaiolo – Pizzas artisanales cuites au feu de bois à Saint-Paul, Réunion. La flamme de la tradition dans chaque pizza. Vente à emporter, Lun–Sam 17h30–21h00." />
+  <meta name="keywords" content="pizza, artisan, feu de bois, Saint-Paul, Réunion, pizzeria, à emporter" />
+  <meta property="og:title" content="Geppetto Artisan Pizzaiolo" />
+  <meta property="og:description" content="La flamme de la tradition dans chaque pizza. Pizzas artisanales cuites au feu de bois à Saint-Paul, Réunion." />
+  <meta property="og:type" content="website" />
+  <title>Geppetto Artisan Pizzaiolo | Saint-Paul, Réunion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      <a href="#accueil" class="navbar__logo">
+        <span class="logo-main">Geppetto</span>
+        <span class="logo-sub">Artisan Pizzaiolo</span>
+      </a>
+      <nav class="navbar__nav" id="navMenu" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#a-propos" class="nav-link">À Propos</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="navbar__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="accueil" aria-label="Accueil">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1600&q=80" alt="Pizza artisanale cuite au feu de bois" class="hero__img" fetchpriority="high" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content container">
+        <p class="hero__tag">Artisan Pizzaiolo · Saint-Paul, La Réunion</p>
+        <h1 class="hero__title">La flamme de la tradition<br><em>dans chaque pizza.</em></h1>
+        <p class="hero__sub">Pizzas artisanales cuites au feu de bois, faites avec passion et ingrédients frais.</p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--primary">Voir le Menu</a>
+          <a href="#contact" class="btn btn--ghost">Nous Contacter</a>
+        </div>
+      </div>
+      <a href="#points-forts" class="hero__scroll" aria-label="Défiler vers le bas">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      </a>
+    </section>
+
+    <section class="usp" id="points-forts" aria-label="Points forts">
+      <div class="container usp__grid">
+        <div class="usp__item"><span class="usp__icon" aria-hidden="true">🔥</span><div><h3 class="usp__title">Feu de Bois</h3><p class="usp__text">Une cuisson authentique qui donne à chaque pizza son caractère unique et sa croûte dorée parfaite.</p></div></div>
+        <div class="usp__item"><span class="usp__icon" aria-hidden="true">🌿</span><div><h3 class="usp__title">Ingrédients Frais</h3><p class="usp__text">Des produits de qualité soigneusement sélectionnés pour vous offrir une expérience gustative authentique.</p></div></div>
+        <div class="usp__item"><span class="usp__icon" aria-hidden="true">⭐</span><div><h3 class="usp__title">96% de Satisfaction</h3><p class="usp__text">23 avis Facebook témoignent de la qualité et de la passion qui animent notre pizzeria.</p></div></div>
+        <div class="usp__item"><span class="usp__icon" aria-hidden="true">🛍</span><div><h3 class="usp__title">Vente à Emporter</h3><p class="usp__text">Commandez et récupérez vos pizzas chaudes du lundi au samedi de 17h30 à 21h00.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-tag">Nos Spécialités</p>
+          <h2 class="section-title" id="menu-title">Notre Menu</h2>
+          <p class="section-sub">Toutes nos pizzas sont préparées à la main et cuites au feu de bois.</p>
+        </div>
+        <div class="menu-tabs" role="tablist">
+          <button class="tab-btn tab-btn--active" data-tab="porc" role="tab" aria-selected="true" aria-controls="tab-porc">🐖 Porc</button>
+          <button class="tab-btn" data-tab="poisson" role="tab" aria-selected="false" aria-controls="tab-poisson">🐟 Poisson</button>
+          <button class="tab-btn" data-tab="fromage" role="tab" aria-selected="false" aria-controls="tab-fromage">🧀 Fromage</button>
+        </div>
+        <div class="menu-panels">
+          <div class="menu-panel menu-panel--active" id="tab-porc" role="tabpanel">
+            <div class="pizza-grid">
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">Napoli</h3><span class="pizza-card__price">14€</span></div><p class="pizza-card__ingredients">Tomate · Mozzarella · Jambon blanc · Olives · Origan</p></article>
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">Reginella</h3><span class="pizza-card__price">15€</span></div><p class="pizza-card__ingredients">Tomate · Mozzarella · Champignons frais · Œuf · Tomate séchée · Olives · Origan</p></article>
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">4 Stagioni</h3><span class="pizza-card__price">15€</span></div><p class="pizza-card__ingredients">Tomate · Mozzarella · Jambon blanc · Champignons frais · Artichauts · Olives</p></article>
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">Pepperoni</h3><span class="pizza-card__price">14€</span></div><p class="pizza-card__ingredients">Tomate · Mozzarella · Chorizo</p></article>
+              <article class="pizza-card pizza-card--featured"><div class="pizza-card__header"><h3 class="pizza-card__name">Boston</h3><span class="pizza-card__price">16€</span></div><p class="pizza-card__ingredients">Mozzarella · Chorizo · Gros piment · Ricotta · Miel</p><span class="pizza-card__badge">Coup de cœur</span></article>
+            </div>
+          </div>
+          <div class="menu-panel" id="tab-poisson" role="tabpanel">
+            <div class="pizza-grid">
+              <article class="pizza-card pizza-card--featured"><div class="pizza-card__header"><h3 class="pizza-card__name">Salmone</h3><span class="pizza-card__price">17€</span></div><p class="pizza-card__ingredients">Crème · Mozzarella · Saumon fumé · Citron</p><span class="pizza-card__badge">Coup de cœur</span></article>
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">Corleone</h3><span class="pizza-card__price">14€</span></div><p class="pizza-card__ingredients">Tomate · Mozzarella · Thon · Olives · Câpres</p></article>
+            </div>
+          </div>
+          <div class="menu-panel" id="tab-fromage" role="tabpanel">
+            <div class="pizza-grid">
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">Pic della Run</h3><span class="pizza-card__price">16€</span></div><p class="pizza-card__ingredients">Crème · Mozzarella · Fromage de chèvre · Miel</p></article>
+              <article class="pizza-card"><div class="pizza-card__header"><h3 class="pizza-card__name">Miele de Capra</h3><span class="pizza-card__price">14€</span></div><p class="pizza-card__ingredients">Crème · Mozzarella · Tomate séchée · Amande torréfiée · Miel</p></article>
+              <article class="pizza-card pizza-card--featured"><div class="pizza-card__header"><h3 class="pizza-card__name">4 Formaggi</h3><span class="pizza-card__price">16€</span></div><p class="pizza-card__ingredients">Tomate · Mozzarella · Chèvre · Gorgonzola · Œuf · Tomate séchée · Grana Padano · Noix · Miel</p><span class="pizza-card__badge">Coup de cœur</span></article>
+            </div>
+          </div>
+        </div>
+        <p class="menu-note">Tous nos prix sont TTC. Vente à emporter uniquement.</p>
+      </div>
+    </section>
+
+    <section class="section about-section" id="a-propos" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-img-wrap"><img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80" alt="Pizza artisanale au four à bois" loading="lazy" /></div>
+          <div class="about-badge"><span class="about-badge__num">96%</span><span class="about-badge__label">de recommandations</span></div>
+        </div>
+        <div class="about-content">
+          <p class="section-tag">Notre Histoire</p>
+          <h2 class="section-title" id="about-title">La passion avant tout</h2>
+          <p class="about-text">Chez Geppetto Artisan Pizzaiolo, chaque pizza raconte une histoire — celle d’un savoir-faire transmis avec amour et d’une passion pour la tradition italienne authentique. Installés au cœur de Saint-Paul, à La Réunion, nous mettons un point d’honneur à vous proposer des pizzas cuites à la perfection dans notre four à bois.</p>
+          <p class="about-text">La chaleur du feu de bois fait toute la différence : une croûte légère et croustillante, des saveurs concentrées et une authenticité que l’on reconnaît à la première bouchée. Nous sélectionnons nos ingrédients avec soin pour que chaque bouchée soit un voyage en Italie.</p>
+          <div class="about-stats">
+            <div class="stat"><span class="stat__num">23</span><span class="stat__label">Avis clients</span></div>
+            <div class="stat"><span class="stat__num">96%</span><span class="stat__label">Recommandations</span></div>
+            <div class="stat"><span class="stat__num">100%</span><span class="stat__label">Artisanal</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-header"><p class="section-tag">Venir nous voir</p><h2 class="section-title" id="contact-title">Nous Trouver</h2></div>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-block"><span class="contact-icon" aria-hidden="true">📍</span><div><h3 class="contact-label">Adresse</h3><p>77 rue Chaussée Royale<br>Saint-Paul, La Réunion</p></div></div>
+            <div class="contact-block"><span class="contact-icon" aria-hidden="true">📞</span><div><h3 class="contact-label">Téléphone</h3><a href="tel:+262693619083" class="contact-link">+262 693 61 90 83</a></div></div>
+            <div class="contact-block"><span class="contact-icon" aria-hidden="true">🕐</span><div><h3 class="contact-label">Horaires</h3><p>Lundi – Samedi<br><strong>17h30 – 21h00</strong></p><p class="hours-closed">Fermé le dimanche</p></div></div>
+            <div class="contact-block"><span class="contact-icon" aria-hidden="true">🛍</span><div><h3 class="contact-label">Service</h3><p>Vente à emporter uniquement</p></div></div>
+            <div class="contact-social"><h3 class="contact-label">Suivez-nous</h3><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook</a></div>
+          </div>
+          <div class="contact-right">
+            <div class="map-wrap"><iframe title="Carte Geppetto Artisan Pizzaiolo" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.6!2d55.2742!3d-21.0094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s77+rue+Chauss%C3%A9e+Royale%2C+Saint-Paul%2C+R%C3%A9union!5e0!3m2!1sfr!2sfr!4v1" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <form class="contact-form" id="contactForm" novalidate>
+              <h3 class="form-title">Envoyer un message</h3>
+              <div class="form-group"><label for="name">Nom</label><input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name" /></div>
+              <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email" /></div>
+              <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="Votre message..." required></textarea></div>
+              <button type="submit" class="btn btn--primary btn--full">Envoyer le message</button>
+              <p class="form-success" id="formSuccess" role="alert" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand"><a href="#accueil" class="navbar__logo"><span class="logo-main">Geppetto</span><span class="logo-sub">Artisan Pizzaiolo</span></a><p class="footer__tagline">La flamme de la tradition dans chaque pizza.</p></div>
+      <nav class="footer__nav" aria-label="Navigation pied de page"><a href="#accueil">Accueil</a><a href="#menu">Menu</a><a href="#a-propos">À Propos</a><a href="#contact">Contact</a></nav>
+      <div class="footer__contact"><p>77 rue Chaussée Royale, Saint-Paul, Réunion</p><a href="tel:+262693619083">+262 693 61 90 83</a><p>Lun–Sam · 17h30–21h00</p></div>
+    </div>
+    <div class="footer__copy"><p>&copy; <span id="year"></span> Geppetto Artisan Pizzaiolo. Tous droits réservés.</p></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
